@@ -1,0 +1,12 @@
+#: import RGBA kivy.utils.rgba
+
+<Yggdrasil>:
+    orientation: 'horizontal'
+    canvas.before:
+        Color:
+            rgba: RGBA(root.theme.background_color)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Label:
+        text: root.text
